@@ -1,0 +1,29 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 380px;
+    height: 40px;
+    counter-increment: counter;
+    padding: 10px 50px 10px 0;
+    text-align: center;
+    margin: 10px auto;
+    background-color: #eee;
+    position: relative;
+    line-height: 2.5;
+    border-right: 5px solid red;
+}
+
+p::before {
+    content: counter(counter);
+    position: absolute;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    width: 35px;
+    height: 40px;
+    text-align: center;
+    line-height: 2.5;
+    margin: 10px auto;
+    padding: 10px;
+    top: -10px;
+    left: -10px;
+}
